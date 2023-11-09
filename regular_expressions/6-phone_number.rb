@@ -1,2 +1,8 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/^\d{10,10}$/).join
+input = "[Got]"
+
+# Extract 10-digit number from input using regular expression
+matched_number = input.scan(/\d{10}/).first
+
+# Output the matched number if found
+puts matched_number
